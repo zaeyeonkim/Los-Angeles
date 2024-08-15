@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* sec_shop */
+#sec_shop {
+    background: #fff;
+    padding-top: 70px;
+    height: 725px;
+    position: relative;
+    margin-bottom: 120px;
+}
+#container {
+    max-width: 1160px;
+    margin: 40px auto;
+    text-align: left;
+}
+#container h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #eb168a;
+}
+#container h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 34px;
+}
+#container > h2 strong {
+    color: #eb168a;
+    font-weight: 700;
+}
+#product_img,
+#desc_area {
+    float: left;
+}
+#product_img {
+    width: 40%;
+}
+#product_img > #img_best01 {
+    max-width: 100%;
+    height: 360px;
+    border-radius: 5px;
+}
+#small_img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#small_img > img {
+    display: block;
+    width: calc(100%/2 - 60px);
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#small_img img:hover {
+    filter: brightness(60%);
+    transition: filter 0.3s ease;
+}
+#desc_area {
+    width: 55%;
+    text-align: left;
+    margin-left: 5%;
+    display: none;
+}
+#desc_area > strong {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 0.9;
+}
+#desc_area > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 25px;
+    word-break: keep-all;
+    position: relative;
+}
+#desc_area p:after {
+    content: '';
+    width: 44px;
+    height: 4px;
+    background: #eb168a;
+    position: absolute;
+    bottom: 10px; left: 0;
+}
+#desc_area .sub_info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+#desc_area .sub_info .address,
+#desc_area .sub_info .call {
+    font-weight: 400;
+    color: #007aff;
+}
+#desc_area .sub_info .address:hover,
+#desc_area .sub_info .call:hover {
+    transition: all 0.2s;
+    font-weight: 500;
+    color: #eb168a;
+}
+#desc_area .sub_info .map {
+    display: none;
+}
+#desc_area .sub_info .map.on {
+    display: block;
+    position: relative;
+    box-shadow: 2px 2px 4px #000;
+    width: 800px; height: 400px;
+    z-index: 2;
+}
+#desc_area .sub_info .map.on button {
+    position: absolute;
+    top: -5px; right: 5px;
+    border: none;
+    font-size: 36px;
+    font-weight: 900;
+    background: none;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#desc_area .sub_info .map.on button:hover {
+    transform: rotate(90deg);
+}
+#desc_area.on {
+    display: block;
+}
+#desc_area .sub_info strong { 
+    margin-right: 5px;
+    color: #000;
+}
+
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+@media screen and (max-width: 431px) {
+    #sec_shop {
+        background: #fff;
+        padding-top: 0;
+        height: 101vh;
+        position: relative;
+        margin-bottom: 190px;
+    }
+    #container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #container h1 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: 400;
+        color: #eb168a;
+        padding-left: 20px;
+    }
+    div#container h2 {
+        width: 80%;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 22px;
+        word-break: keep-all;
+        line-height: 1.6;
+        padding-left: 20px;
+    }
+    #container > h2 strong {
+        color: #eb168a;
+        font-weight: 700;
+    }
+    #product_img,
+    #desc_area {
+        float: left;
+    }
+    #product_img {
+        width: 100%;
+        text-align: center;
+    }
+    #product_img > #img_best01 {
+        max-width: 90%;
+        height: 360px;
+        border-radius: 5px;
+    }
+    #small_img {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+    }
+    #small_img > img {
+        display: inline-block;
+        width: calc(100%/4);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    #small_img img:hover {
+        filter: brightness(60%);
+        transition: filter 0.3s ease;
+    }
+    #desc_area {
+        width: 90%;
+        text-align: left;
+        margin-left: 5%;
+        display: none;
+    }
+    #desc_area > strong {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 0.9;
+    }
+    #desc_area > p {
+        width: 95%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 25px;
+        word-break: keep-all;
+        position: relative;
+    }
+    #desc_area p:after {
+        content: '';
+        width: 44px;
+        height: 4px;
+        background: #eb168a;
+        position: absolute;
+        bottom: 10px; left: 0;
+    }
+    #desc_area .sub_info {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+        word-break: keep-all;
+    }
+    #desc_area .sub_info .address,
+    #desc_area .sub_info .call {
+        font-weight: 400;
+        color: #007aff;
+    }
+    #desc_area .sub_info .address:hover,
+    #desc_area .sub_info .call:hover {
+        transition: all 0.2s;
+        font-weight: 500;
+        color: #eb168a;
+    }
+    #desc_area .sub_info .map {
+        display: none;
+    }
+    #desc_area .sub_info .map iframe {
+        width: 380px;
+        height: 150px;
+    }
+    #desc_area .sub_info .map.on {
+        display: block;
+        position: relative;
+        box-shadow: 2px 2px 4px #000;
+        width: 380px; height: 150px;
+        margin-left: 0;
+        padding-left: 0;
+        z-index: 2;
+    }
+    #desc_area .sub_info .map.on button {
+        position: absolute;
+        top: -5px; right: 5px;
+        border: none;
+        font-size: 36px;
+        font-weight: 900;
+        background: none;
+        color: #000;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    #desc_area .sub_info .map.on button:hover {
+        transform: rotate(90deg);
+    }
+    #desc_area.on {
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #desc_area .sub_info strong { 
+        margin-right: 5px;
+        color: #000;
+    }
+
+}

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#mainImage {
+    width: 100%; /* 이미지가 가득 차도록 설정 */
+    cursor: pointer;
+}
+
+img {
+    max-width: 800px;
+    margin: 200px;
+}

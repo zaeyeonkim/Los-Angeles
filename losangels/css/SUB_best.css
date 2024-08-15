@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+.inner {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+span {
+    color:rgb(247,162,208);
+    font-size: 20px;
+    font-weight: 400;   
+}
+h3{
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 34px;
+}
+strong {
+    color:#eb168a;
+    font-weight: 700;
+}
+
+/* main */
+.main_area {
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/sec_best/_SUB_best/elmata.jpg);
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 50vh;
+}
+.main_text {
+    position: absolute;
+    bottom: 13%; left:20%;
+}
+.main_text h5 {
+    font-size: 40px;
+    font-weight: bold;
+    color:#fff;
+    line-height: 1.8;
+}
+.main_text h6{
+    font-size: 30px;
+    font-weight: 500;
+    color:#fff;
+}
+
+/* sec_place */
+.place_box {
+    padding:50px 0;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 70px;
+}
+.place_lf{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.place_lf .text_lf{
+    width:50%;
+    font-size:20px;
+    color:#000;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-left: 10%;
+    padding-top:80px;
+    box-sizing: border-box;
+}
+.place_box img {
+    width:500px;
+    height: 500px;
+    border-radius: 10px;
+}
+.place_rg .text_rg{
+    margin-top:50px;
+    width:50%;
+    color:#000;
+    font-size:20px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.text_rg strong{
+    font-weight: 600;
+}
+.text_rg span{
+    font-weight: 600;
+    color:#000;
+}
+.place_box img:last-child{
+    position: absolute;
+    top:27%;right:0;
+}
+iframe {
+    width:100%;
+    margin-top: 10%;
+}
+.map_box p {
+    font-size: 20px;
+    font-weight: 400;
+    color:#000;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* sec_rest */
+
+.rest_box ul {
+    display: flex;
+    justify-content: space-between;
+}
+.rest_box li {
+    border-radius: 25px;
+    height: 430px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.rest_box li img {
+    background-position: center;
+    width:330px;
+    height: 200px;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    margin-bottom: 10px;
+}
+.rest_box .rest_text {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.rest_box h4{
+    font-size: 26px;
+    font-weight: 600;
+    color:#000;
+    margin-bottom: 5px;
+}
+.rest_box p{
+    font-size: 17px;
+    font-weight: 600;
+    color:#000;
+    line-height: 1.4;
+}
+.rest_box .text_s{
+    font-size: 15px;
+    font-weight: 600;
+}
+.rest_box .call{
+    font-size: 15px;
+    font-weight: 600;
+}
+.rest_box .star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.rest_box .star p {
+    font-size: 14px;
+    font-weight: 400px;
+    margin-left: 5px;
+}
+.rest_box .star img{
+    display: block;
+    margin:0 0 4px 0;
+    width:20px;
+    height: 20px;
+}
+.rest_box .rest_text span{
+    display: block;
+    font-size: 17px;
+    color:#ef70ac;
+    text-align: right;
+    margin-top: 30px;
+}
+.rest_text .text::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/pin.png);
+    background-size: cover;
+    width:20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.rest_text .text_s::before{
+    content: '';
+    display: inline-block;
+    width:20px;
+    margin-right: 10px;
+}
+.rest_text .call::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/telephone.png);
+    background-size: cover;
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.rest_text .call:hover{
+    transition: all 0.2s;
+    font-weight: 500;
+    color: #eb168a;
+}
+

@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+.inner {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+span {
+    color:rgb(247,162,208);
+    font-size: 20px;
+    font-weight: 400;   
+}
+h3{
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 34px;
+}
+strong {
+    color:#eb168a;
+    font-weight: 700;
+}
+
+/* main */
+.main_area {
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/sec_tour/SUB_tour/main.jpg);
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 50vh;
+}
+.main_text {
+    position: absolute;
+    bottom: 13%; left:20%;
+}
+.main_text h5 {
+    font-size: 40px;
+    font-weight: bold;
+    color:#fff;
+    line-height: 1.8;
+}
+.main_text h6{
+    font-size: 30px;
+    font-weight: 500;
+    color:#fff;
+}
+#sec_place {
+    word-break: keep-all;
+}
+/* sec_place */
+.place_box {
+    padding: 50px 0;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+.place_lf{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 150px;
+}
+.place_lf img {
+    transform: rotate(5deg);
+    box-shadow: 2px 1px 12px rgba(0,0,0,0.3);
+}
+.place_lf.second img {
+    transform: rotate(357deg);
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+}
+.place_lf .text_lf{
+    width:50%;
+    font-size:20px;
+    color:#000;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-left: 10%;
+    padding-top:80px;
+    box-sizing: border-box;
+}
+.place_lf span {
+    font-weight: 600;
+    color:#000;
+}
+.place_box img {
+    width:500px;
+    height: 500px;
+    border-radius: 10px;
+}
+.place_rg {
+    position: relative;
+    height: 400px;
+    margin-bottom: 150px;
+}
+.place_rg img:nth-child(1) {
+    position: absolute;
+    top:-190px; right: 0;
+    transform: rotate(358deg);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    margin-top: 100px;
+}
+.place_rg .text_rg{
+    margin-top:50px;
+    width:50%;
+    color:#000;
+    font-size:20px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.text_rg strong{
+    font-weight: 600;
+}
+.text_rg span{
+    font-weight: 600;
+    color:#000;
+}
+.place_rg.second {
+    height: 50vh;
+    position: relative;
+}
+.place_rg.second img{
+    position: absolute;
+    top:20px; right:0;
+    transform: rotate(358deg);
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+}
+.address:hover, .call:hover {
+    transition: all 0.2s;
+    font-weight: 500;
+    color: #007a00ff;
+}
+em {
+    cursor: pointer;
+}
+

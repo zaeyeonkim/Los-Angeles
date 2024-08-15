@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+html,head,body,div,p,h1,h2,h3,h4,h5,h6,blockquote,ul,ol,li,dl,dt,dd,address,form,fieldset,legend,table,tr,td,th,thead,tbody,tfoot,caption,header,nav,aside,section,article,footer,main,figure,figcaption {margin: 0; padding: 0;}
+
+header,nav,section,article,aside,footer,main,figure {display: block;} /*ie10이하에서 html5태그를 인식하지 못하는 부분에 대한 재선언*/
+
+ul li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+a img {border: none;}
+
+h1,h2,h3,h4,h5,h6,strong,b {font-weight: 400;}
+em,i,cite,address {font-style: normal;}
+
+table {border-collapse: collapse;}
+
+.blind {font-size: 0; line-height: 0; height: 0; overflow: hidden; text-indent: -9999px;}
+
+.clear:before,
+.clear:after {content: ''; display: block; clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+

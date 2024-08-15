@@ -1,0 +1,152 @@
+@charset "utf-8";
+@media screen and (max-width:431px) {
+    /* 공통 */
+    .container{
+        width: 100%;
+    }
+    .container h2 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+    .container p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: rgba(0,0,0,0.8);
+        width: 100%;
+    }
+    
+      /* main */
+      .main_area {
+        width: 100%;
+        height: 30vh;
+    }
+    .main_text {
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+    }
+    .main_text h5 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.8;
+    }
+    .main_text h6 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* sec_main */
+    .sec_main_img img {
+        width: 100%;
+        margin-top: 45px;
+        height: 200px;
+    }
+    .sec_main_text {
+        width: 90%;
+        margin: 20px auto 70px;
+        font-size: 15px;
+        line-height: 1.5;
+        color: rgba(0,0,0,0.8);
+        font-weight: 500;
+    }
+    /* sec_ham */
+    #sec_ham{
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+    .ham_area{
+        display: block;
+    }
+    .ham_img{
+        width:100%;
+        text-align: center;
+    }
+    .ham_area .ham_img img {
+        width: 90%;
+        height: 240px;
+        border-radius: 10px;
+        margin:0 auto;
+    }
+    .ham_area .ham_text_box {
+        width: 100%;
+    }
+    .ham_bot_text {
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(0,0,0,0.8);
+        line-height: 1.5;
+        margin: 20px 0 60px;
+    }
+
+
+    /* hotdog */
+    #sec_hotdog{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .hotdog_inner {
+        width: 100%;
+        display: block;
+    }
+
+    .hotdog_text_box {
+        padding: 30px 0;
+        box-sizing: border-box;
+    }
+    .hotdog_text_box .sec_text {width: 100%;}
+    .hot_img img {
+        width:100%;
+        height: 440px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    /*  mararoni*/
+    #sec_marc {
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin: 100px 0 100px 0;
+    }
+    #sec_marc .container {
+        display: block;
+        margin: 30px auto;
+    }
+    .macaroni_img{
+        width:100%;
+        text-align: center;
+    }
+    .macaroni_img img {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .macaroni_text_box {
+        width: 100%;
+
+    }
+    /* clamchowder */
+    #sec_clam {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    #sec_clam .container {
+        display: block;
+    }
+    .clam_text_box {
+        width: 100%;
+    }
+    .clam_img img {
+        width: 100%;
+        height: 450px;
+        border-radius: 10px;
+    }
+
+
+}

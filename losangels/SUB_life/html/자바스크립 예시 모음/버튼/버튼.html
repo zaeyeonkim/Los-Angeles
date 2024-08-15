@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장소 보기</title>
+</head>
+<body>
+
+<div>
+    <button onclick="showLandmark('거리')">거리</button>
+    <button onclick="showLandmark('명소')">명소</button>
+    <button onclick="showLandmark('풍경')">풍경</button>
+</div>
+
+<div id="placeDisplay"></div>
+
+<script>
+    showLandmark('거리');
+    
+    function showLandmark(place) {
+        var placeDisplay = document.getElementById('placeDisplay');
+        placeDisplay.innerHTML = ''; // 기존 내용 초기화
+
+        // 선택한 장소에 따라 이미지 추가
+        switch (place) {
+            case '거리':
+                for (var i = 1; i <= 4; i++) {
+                    var img = document.createElement('img');
+                    img.src = '../img/' + i + '.jpg';
+                    img.style.width = '200px';
+                    placeDisplay.appendChild(img);
+                }
+                break;
+            case '명소':
+                for (var i = 5; i <= 8; i++) {
+                    var img = document.createElement('img');
+                    img.src = '../img/' + i + '.jpg';
+                    img.style.width = '200px';
+                    placeDisplay.appendChild(img);
+                }
+                break;
+            case '풍경':
+                for (var i = 9; i <= 12; i++) {
+                    var img = document.createElement('img');
+                    img.src = '../img/' + i + '.jpg';
+                    img.style.width = '200px';
+                    placeDisplay.appendChild(img);
+                }
+                break;
+            default:
+                placeDisplay.innerHTML = '장소 정보를 찾을 수 없습니다.';
+                break;
+        }
+    }
+</script>
+
+</body>
+</html>

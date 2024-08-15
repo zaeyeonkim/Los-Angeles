@@ -1,0 +1,173 @@
+@charset "utf-8";
+@media screen and (max-width: 431px) {
+
+    h3 {
+        margin-left: 31px;
+        color: #000;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    
+    /* main */
+    .main_area {
+        width: 100%;
+        height: 30vh;
+    }
+    .main_text {
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+    }
+    .main_text h5 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.8;
+    }
+    .main_text h6 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fdfdfdea;
+    }
+
+    /* place */
+    .place_lf {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .place_box img {
+        width: 100%;
+        height: 400px;
+        border-radius: 0;
+    }
+    .place_box img:last-child{
+        display: none;
+    }
+    .place_lf .text_lf {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-left: 0;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .map_box {
+        text-align: left;
+    }
+    iframe {
+        width:100%;
+        height: 200px;
+        margin-top: 2%;
+    }
+    .map_box p {
+        display: block;
+        margin: 0 auto;
+        width:100%;
+        font-size: 15px;
+        line-height: 1.7;
+        padding:30px;
+        box-sizing: border-box;
+    }
+    .place_box {
+        padding: 50px 0;
+        box-sizing: border-box;
+        position: relative;
+        margin-bottom: 0;
+    }
+    .place_rg .text_rg {
+        margin-top: 0;
+        padding:0 30px 30px 30px;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 15px;
+        text-align: left;
+        line-height: 1.7;
+        
+    }
+ 
+    .text_rg span{
+        font-size: 15px;
+    }
+    /* rest */
+
+    .rest_box ul {
+        display: block;
+        padding: 20px 35px;
+        box-sizing: border-box;
+    }
+    .rest_box li {
+        height: 430px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .rest_box li img {
+        width: 100%;
+        height: 200px;
+    }
+    .rest_box h4{
+        font-size: 20px;
+    }
+    .rest_box p{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .rest_box .text_s{
+        font-size: 16px;
+    }
+    .rest_box li:nth-child(1) .text_s{
+        margin-right: 16px;
+    }
+    .rest_box li:last-child .text_s{
+        font-size: 16px;
+        margin-right: 48px;
+    }
+    .rest_box .call{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .rest_box li:nth-child(1) .call{
+        margin-right: 74px;
+    }
+    .rest_box li:nth-child(2) .call{
+        margin-right: 59px;
+    }
+    .rest_box li:last-child .call{
+        margin-right: 100px;
+    }
+    .rest_box .star p {
+        font-size: 13px;
+    }
+    .rest_box .star {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .rest_box .star img{
+        display: block;
+        width:18px;
+        height: 18px;
+    }
+    .rest_box .rest_text span{
+        margin-top: 20px;
+    }
+    .rest_text .text_s::before{
+        content: '';
+        display: inline-block;
+        width:20px;
+        margin-right: 10px;
+    }
+    .rest_text .call::before{
+        content: '';
+        display: inline-block;
+        background-image: url(../img/telephone.png);
+        background-size: cover;
+        width:20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+

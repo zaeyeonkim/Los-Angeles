@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습용</title>
+    <link rel="stylesheet" href="../html/css/reset.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <style>
+        /* header */
+header {
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 84px;
+    z-index: 10;
+}
+.header_inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    height: 80px;
+}
+header .logo {
+    position: absolute;
+    top: -20%; left: 0;
+}
+header .logo > a {
+    display: block;
+    width: 200px; height: 120px;
+    background: url(../img/la.logo.png) no-repeat;
+}
+header .logo > a:hover {
+    transition: all 0.8s;
+}
+header .gnb {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+header .gnb > li {
+    float: left;
+    margin: 0 20px;
+}
+header .gnb > li > a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    margin: 15px;
+}
+header .gnb > li > a:after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 1px;
+    background: #eb168a;
+    transition: all 0.3s;
+}
+header .gnb > li > a:hover:after {
+    width: 100%;
+}
+header .icon_area {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 55px;
+}
+header .icon_area > a {
+    padding: 5px 10px;
+    margin: 0 3px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.9);
+    transition: all 0.4s;
+}
+header .icon_area > a:hover {
+    color: #fff;
+}
+
+
+
+#container {
+    max-width: 1160px;
+    margin: 40px auto;
+    text-align: left;
+}
+#sec_night {
+    background-image: linear-gradient(to top, #f3f3f3 0%, #eeeeee 100%);
+    padding-top: 70px;
+    height: 80vh;
+    padding-bottom: 50px;
+    position: relative;
+}
+#container {
+    width: 1160px;
+    margin: 40px auto;
+}
+#night_img > img {
+    width: 60%; 
+    height: 520px;
+    float: left;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#night_small > img {
+    width: 35%;
+    height: 247px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+#night_small > img:last-child {
+    margin-top: 22px;
+}
+#night_img > img {
+    position: relative;
+}
+#night_img .big_text {
+    position: absolute;
+    top: 215px; left: 420px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+}
+#night_img .big_text:hover {
+    transition: all 0.7s;
+}
+#night_img .big_text h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+#night_img .big_text p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+#night_img .big_text button {
+    border: none;
+    width: 160px; height: 40px;
+    background: #eeeeee;
+    color: #747474;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#night_img .big_text button:hover {
+    color: #fff;
+    background: #eb168a;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#container h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #eb168a;
+}
+#container h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 34px;
+}
+#container > h2 strong {
+    color: #eb168a;
+    font-weight: 700;
+}
+    </style>
+</head>
+<body>
+<div id="wrap">
+
+    <header>
+        <div class="header_inner">
+            <h1 class="logo">
+                <a href="#"><span class="blind">Logo</span></a>
+            </h1>
+            <ul class="gnb">
+                <li><a href="#"> 관광명소 </a></li>
+                <li><a href="#"> 음식 </a></li>
+                <li><a href="#"> 쇼핑 </a></li>
+                <li><a href="#"> 나이트라이프 </a></li>
+                <li><a href="#"> 투어 </a></li>
+            </ul>
+            <div class="icon_area">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="sec_night">
+        <div class="inner">
+            <div id="container">
+                <h1>Night life</h1>
+                <h2>로스앤젤레스<strong> 나이트 라이프</strong></h2>
+                <div id="night_img">
+                    <img src="img/sec_night/big.png" alt="" id="night_big">
+                    <div class="text_inner">
+                        <div class="big_text">
+                            <h3>로스앤젤레스의 밤에 즐길거리 베스트 10</h3>
+                            <p>
+                                로스앤젤레스의 나이트라이프는 야외에서 영화를 보거나, 할리우드 영화를 <br>
+                                제작하는 스튜디오 투어를 하는 등 다양한 즐길거리로 가득해요. <br>
+                                밤늦게까지 여는 스파와 디저트 상점도 있어요. 어떤 곳은 밤새도록 문을 닫지 <br>
+                                않아요. 밤늦도록 모두 즐길 수 있으니 어떤 것도 놓치지 마세요!
+                            </p>
+                            <button>자세히보기</button>
+                        </div>
+                    </div>    
+                    <div id="night_small">
+                        <img src="img/sec_night/small1.jfif" alt="" class="night_sm">
+                        <img src="img/sec_night/small2.jfif" alt="" class="night_sm">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // 나이트 GNB 클릭 시 부드러운 스크롤로 sec_night로 이동
+        $('header .gnb li:nth-child(4) a').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#sec_night').offset().top
+            }, {
+                duration: 600,
+                step: function(now, fx) {
+                    // 스크롤 중간에 .big_text의 top 값을 변경
+                    if (fx.prop === "scrollTop") {
+                        let adjustedTop = 215 + (now / 600) * 100; // 215에서 315로 이동
+                        $('.big_text').css('top', adjustedTop + 'px');
+                    }
+                },
+                complete: function() {
+                    // 스크롤이 완료된 후 .big_text의 top 값을 315로 설정
+                    $('.big_text').css('top', '315px');
+                }
+            });
+        });
+
+        // 스크롤 이벤트 감지
+        window.addEventListener('scroll', function() {
+            // 현재 스크롤 위치
+            let scrollPosition = window.scrollY;
+
+            // .big_text의 초기 위치와 스크롤 위치 비교
+            if (scrollPosition < 215) {
+                // 스크롤 위치가 215 미만이면 .big_text의 높이를 초기화
+                $('.big_text').css('top', '');
+            } else if (scrollPosition >= 215 && scrollPosition < 315) {
+                // 스크롤 중간에 .big_text의 top 값을 변경
+                let adjustedTop = 215 + ((scrollPosition - 215) / 100) * 100;
+                $('.big_text').css('top', adjustedTop + 'px');
+            } else {
+                // 스크롤 위치가 315 이상이면 .big_text의 높이를 315로 설정
+                $('.big_text').css('top', '315px');
+            }
+        });
+    });
+</script>
+
+
+    
+
+</body>
+</html>

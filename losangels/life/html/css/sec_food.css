@@ -1,0 +1,41 @@
+/* sec_food */
+@charset "utf-8";
+
+@import url(../css/all.min.css);
+@import url(../css/font.css);
+
+#sec_food {
+    background-image: linear-gradient(to top, #f3f3f3 0%, #eeeeee 100%);
+    padding-top: 150px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+.food_swiper {
+    height: 50vh;
+    position: relative;
+}
+.food_swiper .slide {
+    width: 620px;
+    height: 360px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.food_swiper .slide > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.food_swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    background: #eb168a;
+}

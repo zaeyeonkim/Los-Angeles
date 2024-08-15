@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            background: #1c1644;
+            color: #fff;
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        .contents {
+            width: 480px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .contents h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .contents .inner {
+            position: relative;
+        }
+
+        .contents .pic {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 380px;
+            margin: 0 auto 60px;
+        }
+
+        .contents .pic img {
+            max-width: 100%;
+            height: 100%;
+        }
+
+        .pic strong {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 500;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+
+        .pic span {
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.6), inset 0 0 100px rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            z-index: 0;
+        }
+
+        .contents .pic:nth-child(1) strong {
+            opacity: 0;
+        }
+
+        .contents .pic:nth-child(2) strong {
+            opacity: 0;
+            left: -200%;
+        }
+
+        .contents .pic:nth-child(3) strong {
+            bottom: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <h1>Image Caption Effect</h1>
+        <div class="inner">
+            <div class="pic">
+                <img src="../img/1.jpg" alt="">
+                <strong>오션뷰 스파룸</strong>
+                <span></span>
+            </div>
+            <div class="pic">
+                <img src="../img/2.jpg" alt="">
+                <strong>삼청각 전경</strong>
+                <span></span>
+            </div>
+            <div class="pic">
+                <img src="../img/3.jpg" alt="">
+                <strong>
+                    엘 마타도르 비치
+                    <p>엘 마타도르는 모래사장, 바다, 바위가 어울러져 아름다운 해변과 멋진 풍경들이 어울러진 비치입니다.</p>
+                </strong>        
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            const $images= $('.inner .pic');
+            /* 
+                1. 첫 이미지
+                - pic요소에 마우스가 올라가면 strong/span의 opacity = 1
+                - .eq(n) - 순서를 나타내는 메소드 = :nth:child(n)
+            */
+
+        //첫번째 이미지
+            $images.eq(0).on('mouseover', function () {
+            $(this).find('span, strong').stop().animate({
+                opacity: 1
+            },300)
+           }).on('mouseout', function() {
+            $(this).find('span, strong').stop().animate({
+                opacity: 0
+            },300)
+           })
+        //두번째 이미지
+            $images.eq(1).on('mouseover', function() {
+            $(this).find('span, strong').stop().animate({
+                opacity: 1,
+                left: 0
+            },300)   
+           }).on('mouseout', function(){
+            $(this).find('span').stop().animate({
+                opacity: 0                    
+            },300);
+            $(this).find('strong').stop().animate({
+                left: '-200%',
+                opacity: 0
+            })
+           })
+        //세번째 이미지
+            $images.eq(2).on('mouseover', function() {
+            $(this).find('span, strong').stop().animate({
+                opacity: 1,
+                bottom: "40%"
+            },300)    
+           }).on('mouseout', function(){
+            $(this).find('span').stop().animate({
+                opacity: 0                    
+            },300);
+            $(this).find('strong').stop().animate({
+                bottom: '-200%',
+                opacity: 0
+            },300);
+           })
+        })
+    </script>
+</body>
+</html>

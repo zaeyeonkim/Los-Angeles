@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* sec_tour */
+#sec_tour {
+    background: #fff;
+    padding-top: 45px;
+    height: 650px;
+    margin-bottom: 190px;
+    width: 100%;
+}
+.swiper {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+}
+.swiper-slide img {
+      display: block;
+      width: 620px;
+      object-fit: cover;
+      border-radius: 10px;
+}
+/* 모바일 */
+/* 모바일 */
+/* 모바일 */
+@media screen and (max-width: 431px) {
+    #sec_tour {
+        background: #fff;
+        padding-top: 500px;
+        height: 300px;
+        margin-bottom: 190px;
+        width: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+  }
+    .swiper-slide img {
+        display: block;
+        width: 400px;
+        object-fit: cover;
+  }
+}

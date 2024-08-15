@@ -1,0 +1,132 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+body {font-family: 'Cormorant Garamond', serif;}
+
+/* wrap */
+#wrap {
+    position: fixed;
+    min-width: 1024px;
+    min-height: 768px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/main.png) no-repeat center/cover;
+}
+
+/* h1 */
+#wrap h1 {
+    position: fixed;
+    top: 20px;
+    left: 40px; 
+    width: 300px; height: auto;
+    line-height: 1; /* 글자크기만큼만 행간을 적용하여 글자 크기에 따라 적용되는 행간을 1로 고정 */
+}
+#wrap h1 img {
+    width: 200px;
+}
+#wrap h1 strong {
+    font-size: 28px;
+}
+#wrap h1 span {
+    font: bold 14px/1.6 'Tahoma', sans-serif;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 8px;
+}
+/* slogon */
+.text {
+    position: fixed;
+    top: 430px; left: 40px;
+    font-size: 30px;
+    line-height: 0.8;
+    color: rgba(255,255,255,0.7)
+}
+.text span {color: #ce0000}
+
+/* utilNav */
+.utilNav {position: fixed; top: 30px; right: 40px; z-index: 10;}
+.utilNav > a {margin: 0 5px; color: rgba(255,255,255,0.5); font-size: 20px;}
+.utilNav > a:hover {color:#fff;}
+
+/* section */
+.contents {
+    position: fixed;
+    top: 0; right: 0;
+    width: 100%; height: 100%;
+}
+.contents article {
+    position: relative;
+    width: 12%;
+    height: 100%;
+    background: url(../img/divider.png) no-repeat left center;
+    float:right;
+    overflow: hidden;
+}
+
+/* article */
+.contents h2 {
+    position: absolute;
+    top: 300px; left: 20px;
+    padding-left: 15px;
+    border-left: 1px solid #eee;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    z-index: 3;
+    transition: all 0.2s;
+}
+.contents div {
+    position: absolute;
+    top: 300px; left: 0;
+    width: 100%; height: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: 2;
+    transition: all 0.4s;
+}
+.contents video {
+    position: absolute;
+    width: auto; height: 100%;
+    margin-top: 0;
+    margin-left: -100px;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* article 제목효과 */
+article:hover h2 {color: #ccc; border-left-width: 5px; border-left-color: #ce0000;}
+article:hover div {top: 270px; height: 70px;}
+article h3 {
+    position: absolute;
+    bottom: 220px; right: 0;
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+    opacity: 1;
+    z-index: 4;
+}
+article p {
+    position: absolute;
+    bottom: 50px; right: 0;
+    width: 300px;
+    height: 150px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    text-align: right;
+    z-index: 5;
+}
+/* footer */
+footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%; height: 50px;
+    background: #000;
+    font-size: 14px;
+    line-height: 50px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 2px;
+    z-index: 10;
+}
+footer .f_nav {position: absolute; left: 50px; bottom: 0;}
+footer .f_nav a {margin-right: 30px}
+footer p {position: absolute; right: 50px; bottom: 0;}

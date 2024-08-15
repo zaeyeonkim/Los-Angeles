@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #placeDisplay {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #placeDisplay img {
+            display: inline-block;
+            margin-right: 20px; /* 이미지 간 간격 조절 */
+            transition: transform 0.5s ease-in-out; /* 이동 애니메이션 속성 */
+        }
+    </style>
+</head>
+<body>
+    <div id="placeDisplay"></div>
+
+    <button onclick="showLandmark('해변')">해변</button>
+    <button onclick="showLandmark('거리')">거리</button>
+    <button onclick="showLandmark('공원')">공원</button>
+    <button onclick="showLandmark('박물관')">박물관</button>
+    <button onclick="showLandmark('전망')">전망</button>
+
+    <script>
+        function showLandmark(place) {
+            var placeDisplay = document.getElementById('placeDisplay');
+            placeDisplay.innerHTML = ''; // 기존 내용 초기화
+
+            // 선택한 장소에 따라 이미지 추가
+            switch (place) {
+                case '해변':
+                    addImages(1, 4);
+                    break;
+                case '거리':
+                    addImages(5, 8);
+                    break;
+                case '공원':
+                    addImages(9, 12);
+                    break;
+                case '박물관':
+                    addImages(13, 16);
+                    break;
+                case '전망':
+                    addImages(17, 20);
+                    break;
+                default:
+                    placeDisplay.innerHTML = '장소 정보를 찾을 수 없습니다.';
+                    break;
+            }
+
+            // 이미지 이동 애니메이션
+            var images = document.querySelectorAll('#placeDisplay img');
+            var totalWidth = 0;
+
+            images.forEach(function (img) {
+                totalWidth += img.offsetWidth + 20; // 이미지 간 간격 추가
+            });
+
+            placeDisplay.style.width = totalWidth + 'px';
+
+            images.forEach(function (img) {
+                img.style.transform = 'translateX(-' + totalWidth + 'px)';
+                setTimeout(function () {
+                    img.style.transform = 'translateX(0)';
+                }, 100);
+            });
+        }
+
+        function addImages(start, end) {
+            var placeDisplay = document.getElementById('placeDisplay');
+            for (var i = start; i <= end; i++) {
+                var img = document.createElement('img');
+                img.src = 'img/sec_best/' + i + '.jpg';
+                img.style.width = '270px';
+                img.style.height = '440px';
+                placeDisplay.appendChild(img);
+            }
+        }
+    </script>
+</body>
+</html>

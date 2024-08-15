@@ -1,0 +1,111 @@
+@charset "utf-8";
+@media screen and (max-width:431px) {
+
+    h2 {
+        font-weight: 700;
+        font-size: 25px;
+    }
+    /* main */
+    .main_area {
+        width: 100%;
+        height: 30vh;
+    }
+    .main_text {
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+    }
+    .main_text h5 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.8;
+    }
+    .main_text h6 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+    }
+   
+
+    /* sec_enjoy */
+    .sec_enjoy {
+        margin-top: 45px;
+    }
+     .sec_enjoy .enjoy_box{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .enjoy_left  {
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+    .enjoy_right {
+        width:90%;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    
+    .enjoy_box .text {
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+    .enjoy_box img {
+        width:100%;
+        height: 220px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    .address, .call{
+        font-size: 15px;
+        line-height: 1.5;
+        color:#000;
+        font-weight: 700;
+        text-align: left;
+    }
+    .address a,
+    .call a {
+        color: #007aff;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .call:hover {
+        transition: all 0.2s;
+        font-weight: 500;
+        color: #eb168a;
+    }
+   .map{
+        display: none;
+   } 
+    .sec_enjoy iframe {
+    width: 450px;
+    height: 200px;
+    box-sizing: border-box;
+    }
+    .map.on{
+        display: flex;
+        align-items: center;
+        position: relative; 
+        height: 150px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+    .map.on button{
+        position: absolute;
+        top: -58%; right: 2px;
+        border: none;
+        font-size: 36px;
+        font-weight: 900;
+        background: none;
+        color: #000;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: block;
+    }
+    .map.on button:hover{
+        transform: rotate(90deg);
+    }
+}

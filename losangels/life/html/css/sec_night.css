@@ -1,0 +1,80 @@
+/* sec_night */
+@charset "utf-8";
+
+@import url(../css/all.min.css);
+@import url(../css/font.css);
+
+#sec_night {
+    background-image: linear-gradient(to top, #f3f3f3 0%, #eeeeee 100%);
+    padding-top: 70px;
+    height: 80vh;
+    padding-bottom: 80px;
+    position: relative;
+}
+#container {
+    width: 1160px;
+    margin: 40px auto;
+}
+#night_img > img {
+    width: 60%; 
+    height: 520px;
+    float: left;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#night_small > img {
+    width: 35%;
+    height: 247px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+#night_small > img:last-child {
+    margin-top: 22px;
+}
+#night_img > img {
+    position: relative;
+}
+#night_img .big_text {
+    position: absolute;
+    top: 315px; left: 420px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    opacity: 0;
+}
+#night_img .big_text:hover {
+    transition: all 0.7s;
+    opacity: 1;
+}
+#night_img .big_text h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+#night_img .big_text p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+#night_img .big_text button {
+    border: none;
+    width: 160px; height: 40px;
+    background: #eeeeee;
+    color: #747474;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#night_img .big_text button:hover {
+    color: #fff;
+    background: #eb168a;
+    transition: all 0.3s;
+    cursor: pointer;
+}
